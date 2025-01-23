@@ -9,7 +9,7 @@
 <body>
     <header class="mt-3 mb-6 md:border-b-2">
         <nav class="flex justify-center md:justify-between items-center">
-            <h2 class="font-Allerta text-3xl "><span class="text-dessert">S</span>HOPPE</h2>
+            <h2 class="font-Allerta text-3xl "><a href="index.html"><span class="text-dessert">S</span>HOPPE</a></h2>
 
             
             <ul class="md:flex items-center gap-10 hidden">
@@ -32,25 +32,26 @@
     </header>
 
     <!-- hero -->
-    <div class="grid grid-cols-1 md:grid-cols-4 gap-3 overflow-x-hidden ">
+    <div class="grid grid-cols-1 md:grid-cols-5 gap-3 overflow-x-hidden">
         <!-- on small screen it order-2 it not working the div just becomes hidden -->
-        <div class="flex flex-row justify-between md:flex-col gap-1 md:gap-3 col-span-1 md:order-1 basis-1/2">
-            <img src="images/item1.png" alt="" class="w-1/4 md:w-1/2">
-            <img src="images/item1.png" alt="" class="w-1/4 md:w-1/2">
-            <img src="images/item1.png" alt="" class="w-1/4 md:w-1/2">
-            <img src="images/item1.png" alt="" class=" hidden md:block w-1/4 md:w-1/2">
+        <div class="flex flex-row justify-between md:flex-col gap-1 md:gap-3 col-span-1 md:order-1 h-3/4">
+            <img src="images/item1.png" alt="" class="w-1/4 md:w-full">
+            <img src="images/item1.png" alt="" class="w-1/4 md:w-full">
+            <!-- this other to image are hidden cause the other one is streched out on hidden md:block the four-->
+            <img src="images/item1.png" alt="" class="hidden w-1/4 md:w-full">
+            <img src="images/item1.png" alt="" class=" hidden  w-1/4 md:w-full">
         </div>
 
         <div class="col-span-2 order-1 md:order-2">
-            <img src="/images/item1.png" alt="" class="w-full h-full">
+            <img src="/images/item1.png" alt="" class="w-full ">
         </div>
 
-        <div class="order-3">
+        <div class="order-3 col-span-2">
             <h2>Lira Earrings</h2>
             <p class="text-dessert">$ 20,00</p>
     
-            <div class="flex gap-2">
-                <div class="flex">
+            <div class="flex items-center gap-2 h-11">
+                <div class="flex mt-5 mb-2 self-center">
                     <img src="images/fullstar.svg" alt="" class="w-5">
                     <img src="images/fullstar.svg" alt="" class="w-5">
                     <img src="images/fullstar.svg" alt="" class="w-5">
@@ -67,6 +68,10 @@
                 facilisis consequat sed eu felis. 
             </p>
         
+            <form action="" class="flex gap-3 my-4">
+                <input type="number" name="number" id="number" placeholder="1" min="1" class=" basis-1/4 bg-[#eaeaea]">
+                <button type="button" class="uppercase border-2 basis-full py-3">Add To Cart</button>
+            </form>
         </div>
     </div>
 

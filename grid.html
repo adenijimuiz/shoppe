@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="grid grid-cols-1 md:grid-cols-5 gap-3 overflow-x-hidden ">
+        <!-- on small screen it order-2 it not working the div just becomes hidden -->
+        <div class="flex flex-row justify-between md:flex-col gap-1 md:gap-3 col-span-1 md:order-1 basis-1/2">
+            <img src="images/item1.png" alt="" class="w-1/4 md:w-1/2">
+            <img src="images/item1.png" alt="" class="w-1/4 md:w-1/2">
+            <img src="images/item1.png" alt="" class="w-1/4 md:w-1/2">
+            <img src="images/item1.png" alt="" class=" hidden md:block w-1/4 md:w-1/2">
+        </div>
+
+        <div class="col-span-2 order-1 md:order-2">
+            <img src="/images/item1.png" alt="" class="w-full h-full">
+        </div>
+
+        <div class="order-3 col-span-2">
+            <h2>Lira Earrings</h2>
+            <p class="text-dessert">$ 20,00</p>
+    
+            <div class="flex gap-2">
+                <div class="flex">
+                    <img src="images/fullstar.svg" alt="" class="w-5">
+                    <img src="images/fullstar.svg" alt="" class="w-5">
+                    <img src="images/fullstar.svg" alt="" class="w-5">
+                    <img src="images/fullstar.svg" alt="" class="w-5">
+                    <img src="images/fullstar.svg" alt="" class="w-5">
+                </div>
+
+                <p>1 customer review</p>
+            </div>
+
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam 
+                placerat, augue a volutpat hendrerit, sapien tortor faucibus 
+                augue, a maximus elit ex vitae libero. Sed quis mauris eget arcu 
+                facilisis consequat sed eu felis. 
+            </p>
+        
+        </div>
+    </div>
+</body>
+</html>
