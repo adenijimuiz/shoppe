@@ -8,8 +8,8 @@
 </head>
 <body class="container mx-auto">
     <header class="mt-3 mb-6 md:border-b-2">
-        <nav class="flex justify-center md:justify-between items-center">
-            <h2 class="font-Allerta text-3xl "><a href="index.html"><span class="text-dessert">S</span>HOPPE</a></h2>
+        <nav class="flex justify-between items-center">
+            <h2 class="font-Allerta text-3xl text-center flex-1 md:flex-none md:text-left"><a href="index.html"><span class="text-dessert">S</span>HOPPE</a></h2>
 
             
             <ul class="md:flex items-center gap-10 hidden">
@@ -111,7 +111,7 @@
                 <h3 class="mb-5">2 Reviews for lira earings</h3>
 
                 <p class="mt-3">Scarlet withch <span class="text-gray-500 text-xs">6 May, 2020</span></p>
-                <div class="flex gap-2 items-center mt-2">
+                <div class="flex gap-2 items-center mt-3 mb-5">
                     <img src="images/fullstar.svg" alt="">
                     <img src="images/fullstar.svg" alt="">
                     <img src="images/fullstar.svg" alt="">
@@ -122,7 +122,7 @@
                 <p class="border-b-2 pb-3 my-4">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consectetur harum eos numquam quidem laboriosam, illum fugit</p>
 
                 <p class="mt-3">Scarlet withch <span class="text-gray-500 text-xs">6 May, 2020</span></p>
-                <div class="flex gap-2 items-center mt-2">
+                <div class="flex gap-2 items-center mt-3">
                     <img src="images/fullstar.svg" alt="">
                     <img src="images/fullstar.svg" alt="">
                     <img src="images/fullstar.svg" alt="">
@@ -150,19 +150,51 @@
                         <p>Save my name, email, and website in this browser for the next time I comment</p>
                     </div>
                     
-                    <label for="emptystar">Your Rating*</label>
-                    <input type="image" src="images/emptystar.svg" alt="">
-                    <input type="image" src="images/emptystar.svg" alt="">
-                    <input type="image" src="images/emptystar.svg" alt="">
-                    <input type="image" src="images/emptystar.svg" alt="">
-                    <input type="image" src="images/emptystar.svg" alt="">
+                    <div class="flex flex-col">
+
+                        <label for="emptystar" class="my-2">Your Rating*</label>
+
+                        <div class="">
+                            <input type="image" src="images/emptystar.svg" alt="" name="emptystar">
+                            <input type="image" src="images/emptystar.svg" alt="" name="emptystar">
+                            <input type="image" src="images/emptystar.svg" alt="" name="emptystar">
+                            <input type="image" src="images/emptystar.svg" alt="" name="emptystar">
+                            <input type="image" src="images/emptystar.svg" alt="" name="emptystar">
+                        </div>
+                    
+                    </div>
+                    
+                    <button type="button" class="bg-black py-2 px-4 text-white transform hover:scale-125 mt-5">Submit</button>
                 </form>
-
-
             </div>
         </div>
     </section>
 
+    <!--similar  -->
+    <section class="mt-5">
+        <h2 class="my-2 text-center md:text-left font-bold">Similar Items</h2>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-3">
+            <div class="">
+                <img src="images/item2.png" alt="" class="w-full">
+                <h3 class="my-2">Ollie Earrings</h3>
+                <p class="text-dessert">$ 30,00</p>
+    
+            </div>
+    
+            <div class="">
+                <img src="images/item5.png" alt="" class="w-full">
+                <h3 class="my-2">Hal Earring</h3>
+                <p class="text-dessert">$ 25,00</p>
+            </div>
+    
+            <div class="">
+                <img src="images/item4.png" alt="" class="w-full">
+                <h3 class="my-2">Kaede Hair Pin Srt of 3</h3>
+                <p class="text-dessert">$ 30,00</p>
+            </div>
+        </div>
+    </section>
 
 
 
