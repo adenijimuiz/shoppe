@@ -6,7 +6,7 @@
     <title>Shoppe shop</title>
     <link rel="stylesheet" href="style.css">
 </head>
-<body>
+<body class="container mx-auto">
     <header class="mt-3 mb-6 md:border-b-2">
         <nav class="flex justify-center md:justify-between items-center">
             <h2 class="font-Allerta text-3xl "><a href="index.html"><span class="text-dessert">S</span>HOPPE</a></h2>
@@ -32,25 +32,31 @@
     </header>
 
     <!-- hero -->
-    <div class="grid grid-cols-1 md:grid-cols-5 gap-3 overflow-x-hidden">
-        <!-- on small screen it order-2 it not working the div just becomes hidden -->
-        <div class="flex flex-row justify-between md:flex-col gap-1 md:gap-3 col-span-1 md:order-1 h-3/4">
-            <img src="images/item1.png" alt="" class="w-1/4 md:w-full">
-            <img src="images/item1.png" alt="" class="w-1/4 md:w-full">
+    <section class="grid grid-cols-1 md:grid-cols-5 gap-3 overflow-hidden">
+        <div class="flex flex-row justify-between md:flex-col gap-1 md:gap-3 col-span-1 md:order-1 h-3/4 order-2">
+            <img src="images/item1.png" alt="" class="w-1/3 md:w-full">
+            <img src="images/item1.png" alt="" class="w-1/3 md:w-full">
             <!-- this other to image are hidden cause the other one is streched out on hidden md:block the four-->
-            <img src="images/item1.png" alt="" class="hidden w-1/4 md:w-full">
+            <img src="images/item1.png" alt="" class="md:hidden w-1/3">
             <img src="images/item1.png" alt="" class=" hidden  w-1/4 md:w-full">
         </div>
 
+        <!-- big image -->
         <div class="col-span-2 order-1 md:order-2">
-            <img src="/images/item1.png" alt="" class="w-full ">
+            <img src="/images/item1.png" alt="" class="w-full">
+            <div class="relative border-t-4 border-gray-400 mt-3">
+                <div class="absolute border-t-4 border-black -top-1 px-20">
+                    
+                </div>
+            </div>
         </div>
+
 
         <div class="order-3 col-span-2">
             <h2>Lira Earrings</h2>
             <p class="text-dessert">$ 20,00</p>
     
-            <div class="flex items-center gap-2 h-11">
+            <div class="flex items-center gap-2">
                 <div class="flex mt-5 mb-2 self-center">
                     <img src="images/fullstar.svg" alt="" class="w-5">
                     <img src="images/fullstar.svg" alt="" class="w-5">
@@ -68,15 +74,94 @@
                 facilisis consequat sed eu felis. 
             </p>
         
-            <form action="" class="flex gap-3 my-4">
+            <form action="" class="flex gap-3 my-7">
                 <input type="number" name="number" id="number" placeholder="1" min="1" class=" basis-1/4 bg-[#eaeaea]">
-                <button type="button" class="uppercase border-2 basis-full py-3">Add To Cart</button>
+                <button type="button" class="uppercase border-2 basis-full py-3 hover:bg-[#ccae62] transform hover:scale-105 hover:border-0">Add To Cart</button>
             </form>
+
+            <ul class="flex justify-start items-center gap-3 mb-5">
+                <li><img src="images/heart.svg" alt=""></li>
+                <li>|</li>
+                <li><img src="images/mail.svg" alt=""></li>
+                <li><img src="images/facebook.svg" alt=""></li>
+                <li><img src="images/instagram.svg" alt=""></li>
+                <li><img src="images/twitter.svg" alt=""></li>
+            </ul>
+
+            <div class="">
+                <p>SKU: <span class="text-gray-500">12</span></p>
+                <p>Categories: <span class="text-gray-500">Fashion, Style</span></p>
+            </div>
         </div>
-    </div>
+    </section>
+
+    <!-- review -->
+    <section class="mt-20">
+        <ul class="flex gap-16 text-gray-500 border-b-4 pb-4">
+            <li><a href="#">Description</a></li>
+            <li><a href="#">Additional information</a></li>
+            <li class="relative"><a href="#" class="text-black">Review(0)</a>
+                <div class="absolute border-t-4 border-black top-10 -left-2 px-12">
+                </div>
+            </li>
+        </ul>
+
+        <div class="flex md:flex-row flex-col gap-5 mt-3">
+            <div class="basis-1/2">
+                <h3 class="mb-5">2 Reviews for lira earings</h3>
+
+                <p class="mt-3">Scarlet withch <span class="text-gray-500 text-xs">6 May, 2020</span></p>
+                <div class="flex gap-2 items-center mt-2">
+                    <img src="images/fullstar.svg" alt="">
+                    <img src="images/fullstar.svg" alt="">
+                    <img src="images/fullstar.svg" alt="">
+                    <img src="images/emptystar.svg" alt="">
+                    <img src="images/emptystar.svg" alt="">
+                </div>
+
+                <p class="border-b-2 pb-3 my-4">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consectetur harum eos numquam quidem laboriosam, illum fugit</p>
+
+                <p class="mt-3">Scarlet withch <span class="text-gray-500 text-xs">6 May, 2020</span></p>
+                <div class="flex gap-2 items-center mt-2">
+                    <img src="images/fullstar.svg" alt="">
+                    <img src="images/fullstar.svg" alt="">
+                    <img src="images/fullstar.svg" alt="">
+                    <img src="images/emptystar.svg" alt="">
+                    <img src="images/emptystar.svg" alt="">
+                </div>
+
+                <p class="my-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio, maiores numquam aliquam libero voluptatem rerum ullam natus magnam quasi iste explicabo deserunt! Exercitationem, quasi minima!</p>
+            </div>
+
+            <div class="basis-1/2">
+                <h3>Add a Review</h3>
+                <p class="text-gray-500">Your email address will not be published. Required fields are marked *</p>
+
+                <form action="" class="mt-5">
+                    <label for="comment" class="block mb-3"> Your Review*</label>
+                    <textarea name="comment" id="comment" class="b border-b-2 w-full focus:outline-none mb-3" rows="1" placeholder="leave a review"></textarea>
+
+                    <input type="text" name="name" id="name" class="border-b-2 w-full focus:outline-none mb-3 pb-2" placeholder="Enter your name">
+
+                    <input type="email" name="email" id="email" class="border-b-2 w-full focus:outline-none mb-3 pb-2" placeholder="Enter your email">
+
+                    <div class="flex items-center gap-2">
+                        <input type="checkbox" name="" id="">
+                        <p>Save my name, email, and website in this browser for the next time I comment</p>
+                    </div>
+                    
+                    <label for="emptystar">Your Rating*</label>
+                    <input type="image" src="images/emptystar.svg" alt="">
+                    <input type="image" src="images/emptystar.svg" alt="">
+                    <input type="image" src="images/emptystar.svg" alt="">
+                    <input type="image" src="images/emptystar.svg" alt="">
+                    <input type="image" src="images/emptystar.svg" alt="">
+                </form>
 
 
-    
+            </div>
+        </div>
+    </section>
 
 
 
